@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 require('dotenv').config();
 const port = process.env.PORT || 5000
-const apirouter = require('./router/apirouter')
+const apirouter = require('./apirouter')
 
 app.use(apirouter)
 app.listen(port, () => {
