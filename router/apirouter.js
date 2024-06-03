@@ -1,7 +1,8 @@
-const router = require('express').Router()
-const apicontroller = require('../controller/apicontroller')
+const express = require('express');
+const router = express.Router();
+const { rou, heloroute } = require('../controller/apiController');
 
-router.get('/api/', apicontroller.rou)
-router.get('/api/h', apicontroller.heloroute)
+router.get('/', rou);
+router.get('/hello', heloroute);
 
-module.exports = router
+module.exports = router;
