@@ -5,4 +5,5 @@ const { rou, heloroute } = require('../controller/apiController');
 router.get('/', rou);
 router.get('/hello', heloroute);
 
+
 module.exports = router;
