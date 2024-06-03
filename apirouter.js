@@ -1,9 +1,9 @@
 const express = require('express');
-const router = express.Router();
+const app = express.Router();
 const { rou, heloroute } = require('./controller/apiController');
 
-router.get('/', rou);
-router.get('/hello', heloroute);
+app.get('/', rou);
+app.get('/hello', heloroute);
 
 
-module.exports = router;
+module.exports = app;
