@@ -2,5 +2,5 @@
   "version": 2,
   "name": "new",
   "builds": [{ "src": "apirouter.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "./apirouter.js" }]
+  "routes": [{ "src": "/(.*)", "dest": "apirouter.js" }]
 }
